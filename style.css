@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.chat-container, #pickaxe-inline-just_YW8Q5 {
+    width: 700px;
+    max-width: 100%;
+    background-color: rgb(17, 235, 255);
+
+    
+}
+
+h1{
+    font-size: 50px;
+    padding-top: 40px;
+   
+}
+
+#text{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 50px;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
