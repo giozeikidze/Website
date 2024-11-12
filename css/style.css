@@ -23,12 +23,52 @@ h1{
    
 }
 
+#gallery {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+   
+}
+
+
+#gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/the_powerful_new_ai_hardware_of_the_future.jpg);
+    background-blend-mode: exclusion;
+    background-size: 1000px;
+    opacity: 0.5; /* 50% opacity for background */
+    z-index: -1; /* Keeps the background behind other elements */
+}
+
+#gallery > * {
+    position: relative;
+    z-index: 1; /* Ensures child elements are above the background */
+}
+
+#gallery img{
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    border-radius: 100px;
+    margin-top: 60px;
+
+}
+
 #text{
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
-    padding-left: 400px;
-    padding-right: 400px;
-    padding-bottom: 50px;
+    margin: 50px;
+    color: black;
+    font-weight: 700;
+}
+
+#pickaxe-inline-just_YW8Q5{
+    margin-top: 50px;
 }
 
 footer{
