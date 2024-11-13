@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatGPT Chatbot with Pickaxe</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="/node_modules/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,35 +20,46 @@
     <section id="top">
 
 
-    <nav class="navbar">
-        <div class="logo"><h1>ქართული ჯიპიტი</h1>
-        </div>
-        <div calss="navbar-links">
-            <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#lit">Blog</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ქართული ჯიპიტი</h1>
+            </div>
+            <div calss="navbar-links">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
 
     </section>
 
     <section id="gallery">
 
-    
 
-    <div id="text">
-        
 
-        
+        <div id="text">
 
-        <p>ქართ ჯიპიტი არის ქართული ჩატბოტის ვებგვერდი, რომელიც მომხმარებელს საშუალებას აძლევს, მარტივად და კომფორტულად მიიღოს დახმარება და ინფორმაცია ქართულ ენაზე. ჩატბოტი შექმნილია სხვადასხვა შეკითხვაზე პასუხის გასაცემად, იქნება ეს ზოგადი კითხვები, ტექნიკური საკითხები თუ უბრალოდ გასართობი საუბარი. ჩატბოტი იყენებს მოწინავე ხელოვნურ ინტელექტს, რათა შემოგთავაზოთ სასაუბრო გამოცდილება, რომელიც მარტივად და სწრაფად ერგება თქვენს მოთხოვნებს. ვებგვერდი მორგებულია ქართველ მომხმარებლებს და ქართული ენისთვის ოპტიმიზებულია, რაც ჩატბოტთან კომუნიკაციას კიდევ უფრო მარტივს და მოსახერხებელს ხდის.</p>
+            <h1>ჩვენს შესახებ</h1>
 
-     </div>
-    
+            <p>ქართ ჯიპიტი არის ქართული ჩატბოტის ვებგვერდი, რომელიც მომხმარებელს საშუალებას აძლევს, მარტივად და
+                კომფორტულად მიიღოს დახმარება და ინფორმაცია ქართულ ენაზე. ჩატბოტი შექმნილია სხვადასხვა შეკითხვაზე პასუხის
+                გასაცემად, იქნება ეს ზოგადი კითხვები, ტექნიკური საკითხები თუ უბრალოდ გასართობი საუბარი. ჩატბოტი იყენებს
+                მოწინავე ხელოვნურ ინტელექტს, რათა შემოგთავაზოთ სასაუბრო გამოცდილება, რომელიც მარტივად და სწრაფად ერგება
+                თქვენს მოთხოვნებს. ვებგვერდი მორგებულია ქართველ მომხმარებლებს და ქართული ენისთვის ოპტიმიზებულია, რაც
+                ჩატბოტთან კომუნიკაციას კიდევ უფრო მარტივს და მოსახერხებელს ხდის.</p>
+        </div>
+
+
+        <div class="image-container">
+            <img src="img/brain-solid.svg" alt="Image 1">
+            <img src="img/face-smile-regular.svg" alt="Image 2">
+            <img src="img/pen-solid.svg" alt="Image 3">
+</div>
+
     </section>
 
     <!-- Pickaxe Widget -->
@@ -54,43 +67,44 @@
     <section id="chatbot">
 
 
-    <div id="pickaxe-inline-just_YW8Q5"></div>
-    <script>
-        window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIA2CHA0wGQyCwBQBUiEBzQQC+EgGQwgMA3gLICDMAoAnQgvFSCsUIPQYgIHqAEw4NXUgIz6DFQ4OkwghP2AGnoMFJgKAFA8gEA4QAI9gVPBABGqBU3gAggTEBAUQ6ApYkAAgIFMxwLcKgRvlAhyyAIG8DFAoAF1QOTugMODACreB2osAqaIAYhAOaAh6ECCr4BCSwACigJ2BAyEaA0TCAqqOAQquAQ2WAoAKAAISAz6CAB0MAT4DRhIABEYBgkoCicoACEoDm4IAgkoCzc4C2s4DUVIABY4CDQ4AV1YCgFoDWhoAzloB3IoCAl4BTYYA3pIBTo4CykoBYh4BWsYBY84BKooB0d4DlGYD59IBCF4C1+oDRB4AY2oC0F4AEG4CEiIBA2YBAxIAUoYAMt4BOIIDECIAFS4ACJIALYICXQIAXh4AMX4Ab+IBgR4AeAYAmBYCpWIDhQAAZABTADIFgABgQCyQIABZEAAAyACZRAMpdgFRAABAgAPXwCZgIBuocAdEiAKLDACEogESiQAqEoBqL0Ax4iAJBHACWRgADmwDpsIAAm0Ak8WAB4zAGIjgBzQwDjIYBOI0APSGAGkZAAhpAGbACBKgAYDQCBxIBKLMARaKAG1JAH45gCUyQBpwIAoZ8A1N2ATLpAMXQgGECQDzAoAQ9UABEuAKHvAIKZgAwTAAQgEBdQCADIBviMAc76AGWnAFvQgGCgwAXBIB9CUA9fqAETBAKZNgAU/QB27IA66MAsRiAGW9AAwkgGBUQAMi4BmQEAAGaAABxAECIgFljwA5jIAehUAlFyACZXAAwEgAJswCHGoAeCUAps+ANlbAJTfgFYSQAMXoBGF0AmYyADkVAEIygHg2QCCQIAq1UAyBWAJ7tAOJIgAHhQBBIIA6QkAFgOAbCZADnwgEZiwDQv0RADsZgGXAwDzmYAcIUALdeAAqDAAA1gCprQBZpIBQ/cAo1+AQ48ALiAPYRAHVOgA0SDFAFgpQAAVEAXuJAHkmwAw9cAfdnAEUHQABF8AXVTAEMEwAxTUAYNhAA2ywACKIAACAA"};
-        window.PICKAXE.pickaxes.push({ id: "just_YW8Q5", type: "inline" });
-        const { id: _fid } = window.PICKAXE.pickaxes[0];
-        fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
-            .then((e => e.json()))
-            .then((({ v: e }) => {
-                const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
-                if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
-                    const e = document.createElement("script");
-                    e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
-                }
-            }));
+        <div id="pickaxe-inline-just_YW8Q5"></div>
+        <script>
+            window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIA2CHA0wGQyCwBQBUiEBzQQC+EgGQwgMA3gLICDMAoAnQgvFSCsUIPQYgIHqAEw4NXUgIz6DFQ4OkwghP2AGnoMFJgKAFA8gEA4QAI9gVPBABGqBU3gAggTEBAUQ6ApYkAAgIFMxwLcKgRvlAhyyAIG8DFAoAF1QOTugMODACreB2osAqaIAYhAOaAh6ECCr4BCSwACigJ2BAyEaA0TCAqqOAQquAQ2WAoAKAAISAz6CAB0MAT4DRhIABEYBgkoCicoACEoDm4IAgkoCzc4C2s4DUVIABY4CDQ4AV1YCgFoDWhoAzloB3IoCAl4BTYYA3pIBTo4CykoBYh4BWsYBY84BKooB0d4DlGYD59IBCF4C1+oDRB4AY2oC0F4AEG4CEiIBA2YBAxIAUoYAMt4BOIIDECIAFS4ACJIALYICXQIAXh4AMX4Ab+IBgR4AeAYAmBYCpWIDhQAAZABTADIFgABgQCyQIABZEAAAyACZRAMpdgFRAABAgAPXwCZgIBuocAdEiAKLDACEogESiQAqEoBqL0Ax4iAJBHACWRgADmwDpsIAAm0Ak8WAB4zAGIjgBzQwDjIYBOI0APSGAGkZAAhpAGbACBKgAYDQCBxIBKLMARaKAG1JAH45gCUyQBpwIAoZ8A1N2ATLpAMXQgGECQDzAoAQ9UABEuAKHvAIKZgAwTAAQgEBdQCADIBviMAc76AGWnAFvQgGCgwAXBIB9CUA9fqAETBAKZNgAU/QB27IA66MAsRiAGW9AAwkgGBUQAMi4BmQEAAGaAABxAECIgFljwA5jIAehUAlFyACZXAAwEgAJswCHGoAeCUAps+ANlbAJTfgFYSQAMXoBGF0AmYyADkVAEIygHg2QCCQIAq1UAyBWAJ7tAOJIgAHhQBBIIA6QkAFgOAbCZADnwgEZiwDQv0RADsZgGXAwDzmYAcIUALdeAAqDAAA1gCprQBZpIBQ/cAo1+AQ48ALiAPYRAHVOgA0SDFAFgpQAAVEAXuJAHkmwAw9cAfdnAEUHQABF8AXVTAEMEwAxTUAYNhAA2ywACKIAACAA" };
+            window.PICKAXE.pickaxes.push({ id: "just_YW8Q5", type: "inline" });
+            const { id: _fid } = window.PICKAXE.pickaxes[0];
+            fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
+                .then((e => e.json()))
+                .then((({ v: e }) => {
+                    const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
+                    if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
+                        const e = document.createElement("script");
+                        e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
+                    }
+                }));
 
-            </script>
-        
+        </script>
+
     </section>
 
     <section id="contact">
 
-    <div class="contact-form">
-    <h2>კონტაქტი</h2>
-    <form action="#" method="post">
-        <input type="text" name="name" placeholder="თქვენი სახელი" required>
-        <input type="email" name="email" placeholder="თქვენი ელ. ფოსტა" required>
-        <textarea name="message" placeholder="თქვენი შეტყობინება" rows="5" required></textarea>
-        <button type="submit">გაგზავნა</button>
-    </form>
+        <div class="contact-form">
+            <h2>კონტაქტი</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="თქვენი სახელი" required>
+                <input type="email" name="email" placeholder="თქვენი ელ. ფოსტა" required>
+                <textarea name="message" placeholder="თქვენი შეტყობინება" rows="5" required></textarea>
+                <button type="submit">გაგზავნა</button>
+            </form>
 
     </section>
 
-<section>
-    <footer>
-        Giorgi Zeikidze & 2024
+    <section>
+        <footer>
+            Giorgi Zeikidze & 2024
 
-    </footer>
-</section>
+        </footer>
+    </section>
 </body>
+
 </html>
