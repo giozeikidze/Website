@@ -2,8 +2,24 @@ body {
     font-family: "BPG Nino Mtavruli", Arial, sans-serif;
     text-align: center;
     margin: 0;
-    background-color: #f8f9fa;
+    background: linear-gradient(45deg, rgba(173, 216, 230, 0.6), rgba(221, 160, 221, 0.6), rgba(240, 248, 255, 0.6));
+    background-size: 200% 200%;
+    animation: gradientBackground 12s ease infinite;
 }
+
+/* Keyframes for the moving gradient */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .chat-container, #pickaxe-inline-just_YW8Q5 {
     width: 700px;
@@ -24,13 +40,20 @@ h1 {
     font-size: 90px;
     margin-bottom: 0px;
     margin-top: 40px;
+    font-family: "Silkscreen", sans-serif;
     
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
 }
 
 #gallery {
     
     position: relative;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #gallery h1{
@@ -39,24 +62,6 @@ h1 {
     font-size: 60px;
 }
 
-#gallery::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(../img/the_powerful_new_ai_hardware_of_the_future.jpg);
-    background-blend-mode: exclusion;
-    background-size: cover;
-    opacity: 0.3;
-    z-index: -1;
-}
-
-#gallery > * {
-    position: relative;
-    z-index: 1;
-}
 
 
 #text {
@@ -71,50 +76,13 @@ footer {
 }
 
 
-#contact{
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-
 /* suratebi textis qvesh */
 
 .image-container {
     display: flex;
     justify-content: center; /* Center images horizontally */
     gap: 150px; /* Space between images */
-    margin-top: 50px; /* Space above the image container */
+    margin-top: 60px; /* Space above the image container */
     margin-bottom: 0;
 }
 

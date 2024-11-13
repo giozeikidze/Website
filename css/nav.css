@@ -5,19 +5,31 @@ html{
 
 
 
-.navbar{
-   background-color: #8de22b;
+.navbar {
+   background: linear-gradient(45deg, #8de22b, #4caf50, #a8e063);
+   background-size: 200% 200%;
    display: flex;
    flex-direction: column;
-   
- 
-  
+   animation: greenGradientMove 8s ease-in-out infinite;
+}
+
+/* Keyframes for moving the gradient background */
+@keyframes greenGradientMove {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
 }
 
 
 .navbar a{
    color: rgb(0, 0, 0);
-   background-color: #8de22b;
+   
    text-decoration: none;
    display: inline-block;
    font-size: 25px;
