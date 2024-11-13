@@ -1,10 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    font-family: "BPG Nino Mtavruli", Arial, sans-serif;
+    text-align: center;
     margin: 0;
     background-color: #f8f9fa;
 }
@@ -12,24 +8,31 @@ body {
 .chat-container, #pickaxe-inline-just_YW8Q5 {
     width: 700px;
     max-width: 100%;
-    background-color: rgb(17, 235, 255);
-
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
     
 }
 
-h1{
-    font-size: 50px;
-    padding-top: 40px;
-   
+#chatbot{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+h1 {
+    font-size: 90px;
+    margin-bottom: 0px;
+    
 }
 
 #gallery {
     display: flex;
-    flex-direction: row;
     position: relative;
-   
+    padding: 100px;
 }
-
 
 #gallery::before {
     content: "";
@@ -40,39 +43,37 @@ h1{
     bottom: 0;
     background-image: url(../img/the_powerful_new_ai_hardware_of_the_future.jpg);
     background-blend-mode: exclusion;
-    background-size: 1000px;
-    opacity: 0.5; /* 50% opacity for background */
-    z-index: -1; /* Keeps the background behind other elements */
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 #gallery > * {
     position: relative;
-    z-index: 1; /* Ensures child elements are above the background */
+    z-index: 1;
 }
 
-#gallery img{
+#gallery img {
     max-width: 100%;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    margin: 60px 50px 50px 50px;
     border-radius: 100px;
-    margin-top: 60px;
-
 }
 
-#text{
+#text {
     font-size: 25px;
     text-align: justify;
-    margin: 50px;
     color: black;
     font-weight: 700;
 }
 
-#pickaxe-inline-just_YW8Q5{
-    margin-top: 50px;
+footer {
+    padding-top: 30px;
 }
 
-footer{
-    padding-top: 30px;
+
+#contact{
+    display: flex;
+    justify-content: center;
 }
 
 .contact-form {
@@ -85,7 +86,8 @@ footer{
     max-width: 600px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;

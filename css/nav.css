@@ -1,0 +1,52 @@
+html{
+   scroll-behavior: smooth;
+}
+
+
+
+
+.navbar{
+   background-color: #8de22b;
+   display: flex;
+   flex-direction: column;
+ 
+  
+}
+
+
+.navbar a{
+   color: rgb(0, 0, 0);
+   background-color: #8de22b;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   padding: 10px;
+   font-family: "Silkscreen", sans-serif;
+   
+   
+}
+
+.navbar a:hover,
+.navbar a:focus {
+   color: #5C2CB0;
+   background-color: white;
+   border-radius: 10px;
+   outline: none;
+   
+}
+
+.navbar{
+   flex-direction: column;
+   
+}
+
+.navbar ul{
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding-left: 0px;
+   
+
+}
+
+
