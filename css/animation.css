@@ -23,4 +23,21 @@
     transform: scale(1.1); /* Slightly enlarge the image on hover */
 }
 
+/* Animation to fade in from black */
+@keyframes fadeInFromBlack {
+    0% {
+        opacity: 0;
+        background-color: black;
+    }
+    100% {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+/* Apply the animation to the entire body */
+body {
+    animation: fadeInFromBlack 1s ease-in-out;
+    animation-fill-mode: forwards; /* Ensures the final state persists */
+}
 
